@@ -1,0 +1,12 @@
+version: 0.2
+
+This is the syntax of AWS code build
+
+phases:
+  install:
+    runtime-versions:
+      java: corretto11
+  build:
+    commands:
+      mvn clean install -f PP-MS-Search/pom.xml
+  post_build:
